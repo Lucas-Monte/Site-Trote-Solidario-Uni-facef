@@ -66,3 +66,51 @@ td {
     text-align: start;
     padding: 10px;
 }
+
+.centralizado {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.laranja {
+    background-color: orange;
+}
+
+.preto {
+    background-color: black;
+    color: white;
+}
+
+.roxo {
+    background-color: purple;
+}
+
+.verde {
+    background-color: greenyellow;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.azul {
+    background-color: rgb(2, 2, 156);
+    color: white;
+}
+
+.kit-suplemento {
+    background-color: rgb(219, 219, 252);
+    border: 1px solid black;
+}
+
+.seta-texto {
+    display: flex;
+    align-items: center;
+}
+
+.kit-suplemento img {
+    width: 30px;
+    margin-right: 2px;
+    align-content: baseline;
+}
