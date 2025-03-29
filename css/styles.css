@@ -69,7 +69,6 @@ td {
 
 .centralizado {
     text-align: center;
-    font-weight: bold;
     margin-bottom: 0;
 }
 
@@ -94,12 +93,16 @@ td {
     background-color: red;
 }
 
+.cinza {
+    background-color: rgb(187, 187, 187);
+}
+
 .azul {
     background-color: rgb(2, 2, 156);
     color: white;
 }
 
-.kit-suplemento {
+.destaque-azul {
     background-color: rgb(219, 219, 252);
     border: 1px solid black;
 }
@@ -109,8 +112,59 @@ td {
     align-items: center;
 }
 
-.kit-suplemento img {
+.destaque-azul img {
     width: 30px;
     margin-right: 2px;
     align-content: baseline;
+}
+
+.width-100-azul{
+    width:655px;
+    margin-top: 40px;
+    background-color: rgb(219, 219, 252);
+}
+
+.seta-texto img {
+    width: 30px;
+    margin-right: 2px;
+    align-content: baseline;
+}
+
+.sublinhado {
+    text-decoration: underline;
+}
+
+.destaque-amarelo{
+    background-color: rgb(238, 248, 174);
+    border: 1px solid black;
+}
+
+.destaque-amarelo-conteudo, .destaque-azul-conteudo {
+    margin-left: 5px;
+}
+
+.letra-menor {
+    font-size: 12px;
+}
+
+.campos, .calcular, .reiniciar {
+    margin-bottom: 8px;
+}
+
+.calcular button {
+    cursor: pointer;
+}
+
+input {
+    border: 2px solid blue;
+}
+
+.calcular {
+    display: flex;
+}
+
+button {
+    padding: auto;
+    margin-right: 8px;
+    font-size: 1rem;
 }
