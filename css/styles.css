@@ -168,3 +168,11 @@ button {
     margin-right: 8px;
     font-size: 1rem;
 }
+
+.times {
+    border: 2px solid black;
+}
+
+.borda-laranja{
+    border: 2px solid orange;
+}

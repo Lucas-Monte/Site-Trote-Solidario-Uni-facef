@@ -1,13 +1,29 @@
 function calcular() {
-    let inputMascote = parseInt(document.getElementById('mascote').value);
-    let inputAtleta = parseInt(document.getElementById('homenagem').value);
-    let inputLeite = parseInt(document.getElementById('leite').value);
-    let inputKitAvulso = parseInt(document.getElementById('kit-avulso').value);
-    let inputSuplmenteAvulso = parseInt(document.getElementById('suplemento-avulso').value);
-    let soma = inputMascote + inputAtleta + (2*inputLeite) + (30*inputKitAvulso) + (15*inputSuplmenteAvulso);
-    let mostrarSoma = document.getElementById('resultado-soma');
-    mostrarSoma.innerHTML = `Resultado: ${soma} pontos`;
-}
+    let mascote, atleta, leite, kit, suplemento, soma, equipe;
 
-function reiniciar() {
+    mascote = parseInt(document.getElementById('mascote').value);
+    atleta = parseInt(document.getElementById('homenagem').value);
+    leite = parseInt(document.getElementById('leite').value);
+    kit = parseInt(document.getElementById('kit').value);
+    suplemento = parseInt(document.getElementById('suplemento').value);
+    soma = mascote + atleta + (2*leite);
+    equipe = document.getElementById("equipe").value;
+    if (equipe == "laranja"){
+        if(kit >= 97){
+            soma = soma + 5000 + ((kit - 97) * 30);
+        } 
+        else if (kit >= 78){
+            soma = soma + 4000 + ((kit - 78) * 30);
+        }
+        else if (kit >= 49){
+            soma = soma + 2500 + ((kit - 49) * 30);
+        }
+        else if (kit >= 19){
+            soma = soma + 1000 + ((kit - 19) * 30);
+        } else {
+            soma = soma
+        }
+        
+    }
+    document.getElementById('resultado-soma').innerHTML = `Resultado: ${soma} pontos`;
 }
