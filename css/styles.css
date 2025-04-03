@@ -5,15 +5,17 @@ body {
     background-color: #f4f4f4;
     text-align: center; /* texto centralizado */
 }
+
+.cabecalho {
+    background-image: linear-gradient(green, blue);
+}
 header {
-    background-color: #28a745;
     color: white;
     /* 15px (espaçamento interno acima e abaixo) e 0px (direita e esquerda)*/
     padding: 15px 0px;
     font-size: 24px; 
 }
 nav {
-    background: #007bff;
     padding: 10px; /* espaçamento interno do menu */
     display: flex; /* Flex Boxing */
     justify-content: space-between; /* espaço entre os elementos do menu*/
@@ -22,6 +24,7 @@ nav {
 #links-menu{
     display: flex;
     gap: 20px; /* distância entre os itens do menu*/
+    margin-left: 80px;
 }
 nav a { /* configura os links do menu */
     color: white;
