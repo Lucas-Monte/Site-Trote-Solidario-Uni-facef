@@ -6,9 +6,11 @@ body {
     text-align: center; /* texto centralizado */
 }
 
+
 .cabecalho {
     background-image: linear-gradient(green, blue);
 }
+
 header {
     color: white;
     /* 15px (espaçamento interno acima e abaixo) e 0px (direita e esquerda)*/
@@ -33,6 +35,10 @@ nav a { /* configura os links do menu */
     font-size: 18px;
     background: #0056b3;
     border-radius: 5px; /* cantos arredondados */
+}
+
+nav a:hover{
+    background-color: #0179fa;
 }
 
 img {
@@ -177,5 +183,22 @@ button {
 }
 
 .borda-laranja{
-    border: 2px solid orange;
+   background-color:  orange;
+}
+
+.borda-preta{
+    background-color: black;
+    color: white;
+}
+
+.borda-roxa{
+    background-color: purple;
+}
+
+.borda-verde{
+    background-color: green;
+}
+
+.borda-vermelha{
+    background-color: red;
 }

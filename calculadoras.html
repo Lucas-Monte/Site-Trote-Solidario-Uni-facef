@@ -33,11 +33,11 @@
                 <div class="campos">
                     <label>Selecione a cor da equipe</label>
                     <select class="times" id="equipe">
-                        <option class="borda-laranja" value="laranja">Laranja</option>
-                        <option value="preta">Preta</option>
-                        <option value="roxa">Roxa</option>
-                        <option value="verde">verde</option>
-                        <option value="vermelha">vermelha</option>
+                        <option class="borda-laranja" value="laranja" id="laranja">Laranja</option>
+                        <option class="borda-preta" value="preta">Preta</option>
+                        <option class="borda-roxa" value="roxa">Roxa</option>
+                        <option class="borda-verde" value="verde">verde</option>
+                        <option class="borda-vermelha" value="vermelha">vermelha</option>
                     </select>
                 </div>
                 <div class="campos">
@@ -59,6 +59,10 @@
                 <div class="campos">
                     <label>Suplemento Alimentação</label>
                     <input type="number" id="suplemento">
+                </div>
+                <div class="campos">
+                    <label>Doação de Sangue</label>
+                    <input type="number" id="sangue">
                 </div>
                 <div class="calcular">
                     <button type="button" onclick="calcular()">Calcular</button>
