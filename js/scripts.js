@@ -1,5 +1,13 @@
+const select = document.getElementById('equipe');
+
+select.addEventListener('change', ()=>{
+    select.classList.remove('borda-laranja', 'borda-preta', 'borda-roxa', 'borda-verde', 'borda-vermelha');
+    const bordaClasse = 'borda-' + select.value;
+    select.classList.add(bordaClasse);
+})
+
 function calcular() {
-    let mascote, atleta, leite, kit, suplemento, soma, equipe, sangue;
+    let mascote, atleta, leite, kit, suplemento, soma, equipe, sangue, arroz5Kg, arroz1Kg, feijao2Kg, feijao1Kg, macarrao, oleo, acaoSocial, registro;
 
     mascote = parseInt(document.getElementById('mascote').value);
     atleta = parseInt(document.getElementById('homenagem').value);
@@ -7,7 +15,15 @@ function calcular() {
     kit = parseInt(document.getElementById('kit').value);
     suplemento = parseInt(document.getElementById('suplemento').value);
     sangue = parseInt(document.getElementById('sangue').value);
-    soma = mascote + atleta + (2*leite);
+    arroz5Kg = parseInt(document.getElementById('arroz5kg').value);
+    arroz1Kg = parseInt(document.getElementById('arroz1kg').value);
+    feijao2Kg = parseInt(document.getElementById('feijao2kg').value);
+    feijao1Kg = parseInt(document.getElementById('feijao1kg').value);
+    macarrao = parseInt(document.getElementById('macarrao').value);
+    oleo = parseInt(document.getElementById('oleo').value);
+    acaoSocial = parseInt(document.getElementById('acaoSocial').value);
+    registro = parseInt(document.getElementById('registro').value)
+    soma = mascote + atleta + (2*leite) + (5*arroz5Kg) + arroz1Kg + (2*feijao2Kg) + feijao1Kg + ((1/2)*macarrao) + oleo + acaoSocial + registro;
     equipe = document.getElementById("equipe").value;
     if (equipe == "laranja"){
         //conectivo "e" usa && e conectivo "ou" usa ||
@@ -117,7 +133,16 @@ function calcular() {
         }
     }
     
-        
-
     document.getElementById('resultado-soma').innerHTML = `Resultado: ${soma} pontos`;
+}
+
+function reiniciar() {
+    const campos = ['mascote', 'homenagem', 'leite', 'kit', 'suplemento', 'sangue', 'arroz5kg', 'arroz1kg', 'feijao2kg', 'feijao1kg', 'macarrao', 'oleo', 'acaoSocial', 'registro'];
+
+    campos.forEach(id => {
+        document.getElementById(id).value = "";
+    });
+
+    document.getElementById('equipe').value = '';
+    document.getElementById('resultado-soma').innerHTML = '';
 }
